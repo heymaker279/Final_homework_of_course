@@ -100,6 +100,7 @@ class YandexUploader():
 # my_vk_page.get_name_folder() # название папки для яндекс диска
 
 my_vk_page = VkUserPhoto(vk_token, 5.131, my_id)
+my_vk_page.create_inf_file()
 ya_upload = YandexUploader(yandex_token , ya_url + "/upload")  
 ya_create_folder = YandexUploader(yandex_token , ya_url)
 ya_create_folder.create_new_folder()
